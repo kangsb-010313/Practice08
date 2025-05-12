@@ -14,6 +14,22 @@ public class SumApp {
 		//코드를 작성하세요
 		
 		
+		String[] sn = numLine.split(" "); //공백
+		
+		for(int i=0; i<sn.length; i++) {
+		/*
+			try {
+				int num = Integer.parseInt(sn[i]); //문자열 -> 정수
+				sum = sum + num;
+			}catch(NumberFormatException e) { //오류 예외처리
+				System.out.println("x");
+			}
+		*/
+			int num = Integer.parseInt(sn[i]);
+			sum = sum + num;
+			
+			
+		}
 		
 		System.out.println("합:" + sum);
 		
